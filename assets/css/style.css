@@ -1,1 +1,58 @@
  /* Init template */
+#index{
+    position: fixed;
+    top:20%;
+    left:50%;
+}
+#rightButton{
+    position: fixed;
+    top:50%;
+    right:3%;
+}
+#leftButton{
+    position:fixed;
+    top:50%;
+    left:3%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+label {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+/*------ Style 1 ------*/
+#pageColor{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#pageColor::-webkit-color-swatch {
+  border-radius: 15px;
+  border-style: solid;
+  border-image: linear-gradient(to right, white, black) 1;}
+#pageColor::-moz-color-swatch {
+  border-radius: 15px;
+  border-style: solid;
+  border-image: linear-gradient(to right, white, black) 1;}
+}

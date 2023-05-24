@@ -1,30 +1,40 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Carousel</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Carousel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+</head>
+<body>
+    <!--[if lt IE 8]>
             <p class="browserupgrade">
             You are using an <strong>outdated</strong> browser. Please
             <a href="http://browsehappy.com/">upgrade your browser</a> to improve
             your experience.
             </p>
         <![endif]-->
-        <h2 id="index">Page 1</h2>
-        <button onclick="shiftLeft()">Left</button>
-        <button onclick="shiftRight()">Right</button>
-        <label for="favcolor">Select your favorite color:</label>
+    <h2 id="index">1</h2><button id="leftButton" onclick=
+    "shiftLeft()"><svg xmlns="http://www.w3.org/2000/svg" width=
+    "26" height="26" fill="currentcolor" class=
+    "bi bi-arrow-left-circle-fill" viewbox="0 0 16 16">
+    <path d=
+    "M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z">
+    </path></svg></button> <button id="rightButton" onclick=
+    "shiftRight()"><svg xmlns="http://www.w3.org/2000/svg" width=
+    "26" height="26" fill="currentcolor" class=
+    "bi bi-arrow-right-circle-fill" viewbox="0 0 16 16">
+    <path d=
+    "M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z">
+    </path></svg></button>
+    <div class="container">
         <input type="color" id="pageColor" value="#ffffff">
-        <script src="assets/scripts/script.js"></script>
-    </body>
-
+    </div>
+    <script src="assets/scripts/script.js"></script>
+</body>
 </html>
